@@ -1,23 +1,27 @@
 <header>
   <nav>
-    <%= link_to "Oliveira Trade", root_path %>
-    
-    <% if current_user %>
-      <li>
-        <%= link_to current_user.name, current_user %>
-      </li>
-      <li>
-        <%= link_to "Sign Out", session_path, method: :delete,
-                            class: "button" %>
-      </li>
-    <% else %>
-      <li>
-        <%= link_to "Sign In", signin_path, class: "button" %>
-      </li>
-      <li>
-        <%= link_to "Sign Up", signup_path, class: "button" %>
-      </li>
-    <% end %>
+    <ul class="left">
+      <%= link_to "Oliveira Trade", root_path %>
+    </ul>
+
+    <ul class="right">
+      <% if current_user %>
+        <li>
+          <%= link_to current_user.name, current_user %>
+        </li>
+        <li>
+          <%= link_to "Sign Out", session_path, method: :delete,
+                              class: "button" %>
+        </li>
+      <% else %>
+        <li>
+          <%= link_to "Sign In", signin_path, class: "button" %>
+        </li>
+        <li>
+          <%= link_to "Sign Up", signup_path, class: "button" %>
+        </li>
+      <% end %>
+    </ul>
 
   </nav>
 </header>
