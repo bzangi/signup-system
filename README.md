@@ -30,3 +30,4 @@ Caso apresente algum erro, finalize a aplicação com `Ctrl + C` no terminal que
 - Em `http://localhost:3000/signup` pode ser feito o registro do usuário no sistema (o usuário é logado no momento do registro)
 - Em `http://localhost:3000/signin` pode ser feito o login de um usuário já registrado no sistema. Após o login, você será redirecionado para se perfil.
 - Clicando em `Sign out` é possível deslogar da conta.
+- O usuário só pode ser registrado com um cpf válido, utilize um [gerador de cpf](https://www.geradordecpf.org/) para fins de teste
